@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Hub | Premium Script Provider</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Particles -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <span>Swifbara<span class="highlight">Hub</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#games">Games</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="nav-actions">
+                <a href="https://discord.gg/yPEsDAr2Wx" target="_blank" class="discord-btn">
+                    <i class="fab fa-discord"></i>
+                    Discord
+                </a>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#games">Games</a>
+        <a href="#faq">FAQ</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="badge">
+                <i class="fas fa-star"></i>
+                #1 Trusted Script Provider
+            </div>
+            <h1 class="hero-title">
+                Dominate Every
+                <span class="gradient-text">Roblox Game</span>
+            </h1>
+            <p class="hero-subtitle">
+                Experience the next generation of gaming scripts. Undetected, powerful, 
+                and constantly updated to keep you ahead of the competition.
+            </p>
+            
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10000">0</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">Games Supported</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="99">0</span>
+                    <span class="stat-label">% Uptime</span>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="cta-buttons">
+                <button class="btn btn-primary" id="getScriptBtn">
+                    <i class="fas fa-download"></i>
+                    Get Script
+                    <div class="btn-glow"></div>
+                </button>
+                <button class="btn btn-secondary" id="gameSupportBtn">
+                    <i class="fas fa-gamepad"></i>
+                    Game Support
+                </button>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Undetected</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-sync"></i>
+                    <span>Auto Update</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 Support</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Visual -->
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">Swiftbara.lua</span>
+                </div>
+                <div class="code-content">
+                    <pre><code><span class="code-comment">-- Swiftbar Hub Premium Script</span>
+<span class="code-keyword">local</span> SwiftbaraHub = <span class="code-function">loadstring</span>(<span class="code-function">game:HttpGet</span>(
+    <span class="code-string">"https://swiftbara.com/script"</span>
+))()
+
+<span class="code-comment">-- Initialize the hub</span>
+<span class="code-keyword">local</span> Window = SwiftbaraHub:<span class="code-function">CreateWindow</span>({
+    <span class="code-property">Title</span> = <span class="code-string">"Swiftbara Hub"</span>,
+    <span class="code-property">Theme</span> = <span class="code-string">"Ocean"</span>
+})
+
+<span class="code-comment">-- Enjoy unlimited power! 🚀</span></code></pre>
+                </div>
+            </div>
+            <div class="floating-cards">
+                <div class="float-card card-1">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Script Loaded!</span>
+                </div>
+                <div class="float-card card-2">
+                    <i class="fa-solid fa-crosshairs"></i>
+                    <span>Aimbot</span>
+                </div>
+                <div class="float-card card-3">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>Esp Active</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <span class="section-tag">Why Choose Us</span>
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Everything you need to enhance your gaming experience</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Undetected</h3>
+                <p>Our scripts use advanced bypasses to remain completely undetected by anti-cheat systems.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Lightning Fast</h3>
+                <p>Optimized code ensures zero lag and instant execution for the smoothest experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Auto Updates</h3>
+                <p>Scripts automatically update when games patch, so you never miss a beat.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Modern UI</h3>
+                <p>Beautiful, intuitive interface that's easy to use for beginners and pros alike.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Active Community</h3>
+                <p>Join thousands of users in our Discord for support, updates, and more.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-infinity"></i>
+                </div>
+                <h3>Unlimited Access</h3>
+                <p>One script, unlimited games. Access all supported games with a single loader.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games" id="games">
+        <div class="section-header">
+            <span class="section-tag">Supported Games</span>
+            <h2 class="section-title">10+ Games Available</h2>
+            <p class="section-subtitle">And we're adding more every week</p>
+        </div>
+        <div class="games-showcase">
+            <div class="game-card">
+                <div class="game-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <i class="fas fa-sword"></i>
+                </div>
+                <div class="game-info">
+                    <h4>Weird Gun Game</h4>
+                    <span class="game-status online">Online</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <i class="fas fa-fist-raised"></i>
+                </div>
+                <div class="game-info">
+                    <h4>The Eastern War</h4>
+                    <span class="game-status online">Online</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <div class="game-info">
+                    <h4>Midnight Chasers</h4>
+                    <span class="game-status online">Online</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <div class="game-info">
+                    <h4>Da Block</h4>
+                    <span class="game-status online">Online</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <i class="fas fa-ghost"></i>
+                </div>
+                <div class="game-info">
+                    <h4>Universal</h4>
+                    <span class="game-status online">Online</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="game-info">
+                    <h4>Restaurant Tycoon 3</h4>
+                    <span class="game-status online">Online</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                    <i class="fas fa-dragon"></i>
+                </div>
+                <div class="game-info">
+                    <h4>Gunfight Arena</h4>
+                    <span class="game-status online">Online</span>
+                </div>
+            </div>
+            <div class="game-card more-games">
+                <div class="game-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <span class="more-count">+1948</span>
+                </div>
+                <div class="game-info">
+                    <h4>More Games</h4>
+                    <span class="game-status">View All</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-header">
+            <span class="section-tag">FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is it safe to use?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Our scripts are designed with security in mind. We use advanced obfuscation and bypass techniques to ensure you stay undetected.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Which executors are supported?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We support all major executors including Synapse X, Script-Ware, KRNL, Fluxus, and more. Our scripts are optimized for maximum compatibility.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is it free?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, our basic scripts are completely free! We also offer premium features for users who want additional functionality.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I get support?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Join our Discord server for 24/7 support from our team and community. We're always happy to help!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>Swiftbara<span class="highlight">Hub</span></span>
+                </div>
+                <p>The most trusted script provider for Roblox games.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#games">Games</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <a href="#">Discord</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SwiftbaraHub. All rights reserved. Made with Minh
+        </div>
+    </footer>
+
+    <!-- Script Modal -->
+    <div class="modal" id="scriptModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <i class="fas fa-code"></i>
+                <h3>Get Your Script</h3>
+            </div>
+            <div class="modal-body">
+                <p>Copy the script below and paste it into your executor:</p>
+                <div class="script-box">
+                    <code id="scriptCode">loadstring(game:HttpGet("https://raw.githubusercontent.com/YourRepo/main/loader.lua"))()</code>
+                    <button class="copy-btn" id="copyBtn">
+                        <i class="fas fa-copy"></i>
+                        Copy
+                    </button>
+                </div>
+                <div class="copy-success" id="copySuccess">
+                    <i class="fas fa-check-circle"></i>
+                    Copied to clipboard!
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p><i class="fas fa-info-circle"></i> Works with all major executors</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Games Modal -->
+    <div class="modal" id="gamesModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-large">
+            <button class="modal-close" id="closeGamesModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <i class="fas fa-gamepad"></i>
+                <h3>Supported Games</h3>
+            </div>
+            <div class="modal-body">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search games..." id="gameSearch">
+                </div>
+                <div class="games-list" id="gamesList">
+                    <!-- Games will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.json"></script>
+</body>
+</html>
