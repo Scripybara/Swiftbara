@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/loader",
+      "destination": "/api/loader"
+    }
+  ]
+}
