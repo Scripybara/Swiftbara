@@ -1,5 +1,5 @@
 export default function handler(req, res) {
-  const script = `https://raw.githubusercontent.com/Scripybara/NameProtect/refs/heads/main/Swiftbara.lua
+  const script = `loadstring(game:HttpGet("https://raw.githubusercontent.com/Scripybara/NameProtect/refs/heads/main/Swiftbara.lua"))()
 `;
 
   res.setHeader('Content-Type', 'text/plain');
@@ -7,3 +7,4 @@ export default function handler(req, res) {
   res.status(200).send(script);
 
 }
+
