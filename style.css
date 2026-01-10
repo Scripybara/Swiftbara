@@ -1,4 +1,7 @@
-
+/* ═══════════════════════════════════════════════════════════
+   NEXUS HUB - MODERN CHEAT WEBSITE
+   Colors: Orange (#FF6B35) & Light Blue (#4ECDC4)
+═══════════════════════════════════════════════════════════ */
 
 :root {
     /* Primary Colors */
@@ -1247,4 +1250,18 @@ body {
     .footer {
         padding: 50px 20px 20px;
     }
+}
+
+/* LOGO IMAGE */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px rgba(255, 140, 0, 0.6)); /* glow */
 }
