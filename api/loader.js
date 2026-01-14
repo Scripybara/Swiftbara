@@ -1,3 +1,5 @@
+export default function handler(req, res) {
+  const script = `
 local http = function(u)
     local r
     pcall(function() r = game:HttpGet(u) end)
@@ -103,3 +105,9 @@ if allowedPlaceIds[game.PlaceId] then
 else
     loadNameProtect()
 end
+`;
+
+  res.setHeader('Content-Type', 'text/plain');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.status(200).send(script);
+}
