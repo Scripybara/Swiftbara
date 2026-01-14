@@ -1,6 +1,6 @@
 export default function handler(req, res) {
   const script = `
-llocal http = function(u)
+local http = function(u)
     local r
     pcall(function() r = game:HttpGet(u) end)
     if r then return r end
@@ -39,4 +39,5 @@ end
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.status(200).send(script);
 }
+
 
